@@ -2,6 +2,8 @@ import sys
 from PyQt5.QtWidgets import (QApplication,QWidget,QPushButton,QVBoxLayout, QMessageBox, QPlainTextEdit, QHBoxLayout)
 from PyQt5.QtGui import QIcon
 
+# QHBoxLayout 추가
+from PyQt5.QtGui import QIcon
 
 class Calculator(QWidget):
     
@@ -26,6 +28,7 @@ class Calculator(QWidget):
         
         vbox=QVBoxLayout()
         vbox.addWidget(self.te1)
+        #vbox.addWidget(self.btn1)
         vbox.addLayout(hbox)
         vbox.addStretch(1)
         
